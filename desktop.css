@@ -1,3 +1,6 @@
+body {
+    padding: 50px;
+}
 #input-task,
 button {
   width: 55%;
