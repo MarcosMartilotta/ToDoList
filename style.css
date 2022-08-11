@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    padding: 50px;
+    height: fit-content;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fafafafa;
+}
+
+h1 {
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+    font-size: 2.4rem;
+    font-weight: 300;
+}
+
+#input-task, .task, button {
+    width: 55%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.6s cubic-bezier(.25,.8,.25,1);
+    -webkit-transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    -moz-transition: all 0.6s cubic-bezier(.25,.8,.25,1);
+    -ms-transition: all 0.6s cubic-bezier(.25,.8,.25,1);
+    -o-transition: all 0.6s cubic-bezier(.25,.8,.25,1);
+    text-align: center;
+    font-weight: 500;
+}
+
+#input-task, .task {
+    color: #212121;
+    font-size: 0.8rem;
+}
+
+.task {
+    text-align: left;
+    padding-left:20px;
+    animation: fadeIn 0.5s ease;
+    -webkit-animation: fadeIn 0.5s ease;
+}
+
+    @keyframes fadeIn {
+        0%{
+            opacity: 0;
+            filter: blur(20px);
+            -webkit-filter: blur(20px);
+    }
+        5% {
+            opacity: 1;
+            filter: brightness(2) blur(10px);
+            -webkit-filter: brightness(2) blur(10px);
+    }
+    
+    
+    }
+
+.fadeOut {
+    opacity: 1;
+    transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+}
+
+
+
+
+button {
+    width: 100px;
+    background-color: white;
+    color: #555555;
+}
+.task--container {
+    width: 60%;
+}
+
+.task--container ul {
+    list-style-type: none;
+}
+.task {
+    width: 100%;
+}
+
+
+
+#input-task::placeholder {
+    text-align: center;
+}
+
+#input-task:hover, .task:hover {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2), 0 10px 10px rgba(0,0,0,0.24);
+}
+
+button:active {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2), 0 10px 10px rgba(0,0,0,0.24);
+}
+
+#input-task:focus {
+    outline: none;
+}
+
+#input-task:focus::placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ;
+    -webkit-transition: opacity 0.3s ;
+    -moz-transition: opacity 0.3s ;
+    -ms-transition: opacity 0.3s ;
+    -o-transition: opacity 0.3s ;
+}
