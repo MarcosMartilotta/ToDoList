@@ -8,3 +8,7 @@ button {
     margin: 0 auto;
     margin-bottom: 20px;
 }
+
+.task--container {
+    width: 80%;
+}

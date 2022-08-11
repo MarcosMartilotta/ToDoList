@@ -28,7 +28,7 @@ h1 {
 #input-task,
 .task,
 button {
-  width: 80%;
+  width: 100%;
   padding: 10px;
   margin-bottom: 20px;
   border: none;
@@ -89,7 +89,7 @@ button:active {
 }
 
 .task--container {
-  width: 60%;
+  width: 100%;
 }
 
 .task--container ul {
