@@ -28,7 +28,7 @@ h1 {
 #input-task,
 .task,
 button {
-  width: 55%;
+  width: 80%;
   padding: 10px;
   margin-bottom: 20px;
   border: none;
@@ -51,6 +51,7 @@ button {
   padding-left: 20px;
   animation: fadeIn 0.5s ease;
   -webkit-animation: fadeIn 0.5s ease;
+  overflow: hidden;
 }
 
 @keyframes fadeIn {
