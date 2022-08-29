@@ -51,8 +51,15 @@ button {
   padding-left: 20px;
   animation: fadeIn 0.5s ease;
   -webkit-animation: fadeIn 0.5s ease;
-  overflow: hidden;
+  overflow: scroll;
+  scrollbar-width: 0px;
 }
+
+.task::-webkit-scrollbar{
+  display: none;
+}
+
+
 
 @keyframes fadeIn {
   0% {
